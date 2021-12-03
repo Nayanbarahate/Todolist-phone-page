@@ -1,332 +1,221 @@
-body{
-    background-color: whitesmoke;
+*{
+    margin: 0;
+    padding: 0;
 }
-#main-continer{
-    background-color:white;	;
-    border:1px solid lightgrey;
-    margin-top:3em;
-    margin-left:5%;
-    width:90%;
-    height:37.5rem;
-    text-align:center;
-    font-family: 'Open Sans', sans-serif;
+#taskli{
+    font-size: 40px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
-/* 1 page style */
-#page1-continer{   
-    margin-top:1em;
+#addbutton{
+    display: flex;
+    font-size: 30px;
+    margin-left: 20%;
+    padding-top: 10px;
 }
-
-#header{
-    text-align:center;
-    margin-top:4rem;
-    margin-bottom:5rem;
+.container1{
+    display: flex;
+    margin: 10% 0px 0px 20%;
 }
-#header p{
-    display:inline-block;
-    font-weight:700;
-    font-size:4rem;
-    margin:0;
-    text-align:center;
-    margin-right:45rem;
+.container2{
+    display: inline-flex;
+    padding:50px 0 0 200px;
+    margin-left: 50px;
 }
-#header small{
-    font-weight:100;
+.card{
+    border: 1px solid red;
+    border-radius: 10px;
+    width: 150px;
+    height: 270px;
+    margin: 0 0 0 50px;
+    padding: 20px 0 0 20px;
+    box-shadow:5px 5px 5px darkgrey;
+    font-size: 20px;
 }
-#plus-icon{
-    display:inline-block;
-    color:#f44336;
-    font-size:3.5rem;
-    margin-left:4rem;
-}
-#page1-body{
-    margin-left:0;
-    margin-top:0;
-}
-.page1-boxes{
-    display:inline-block;
-    border:0.07rem solid #EF5350;
-    border-radius:0.32rem;
-    width:12rem;
-    height:15rem;
-    text-align:left;
-    box-shadow:0.32rem 0.32rem  0.4em lightgrey;
-    margin-left:2em;
-    margin-bottom:1em;
-    font-weight:100;
-    font-size:1.5em;
-    color:#424242;
-}
-div .page1-boxes p{
-    margin-left:0.5em;
-    margin-top:3em;
-}
-
-/* 2 page style */
-#page2-header {
-    margin-top:5rem;
-    font-weight:700;
-    font-size:3rem;
-    color:#424242;
-}
-#page2-backicon{
-    color:#f44336;
-    margin-right:1rem;
-}
-.page2-box{
-    border:0.07rem solid #EF5350;
-    border-radius:0.32rem;
-    box-shadow:0.32rem 0.32rem  0.4em lightgrey;
-    width:18rem;
-    height:20rem;
-    margin:auto;
-    margin-top:2rem ;
-    position: relative;
-}
-div .page2-box h3{
-    color:#f44336;
-    font-size:1.5rem;
-    font-weight:200;
-}
-div.page2-box hr{
-    width:75%;
-    float:right;
-}
-div .page2-box h4{
-    color:#f44336;
-    text-decoration:line-through;
-    font-size:1.1rem;
-    margin-left:1rem;
-}
-div .page2-box input{
-    width:1.2rem;
-    height:1.2rem;
-    float:left;
-    margin-left:2rem;
-}
-div .page2-box p{
-    color:#424242;
-    display:inline;
-    font-size:1.5rem;
-    margin-right:5.3rem;
- }
- #page2-plusicon{
-    color:#f44336;
-    font-size:2.5rem;
+.line{
+    border: 1px solid black;
+    width: 30%;
+    top: 6.5;
+    height: 0px;
     position: absolute;
-    left:14.5rem;
-    top:16.5rem;
 }
-
-/* 3 page style */
-.refernce{
-    position: relative;
+.paris{
+    font-size: 50px;
+    font-weight: 600;
+    background-color: #fff;
+    position: absolute;
+    left: 40%;
+    top: 6.5%;
 }
-.blure{
-    filter:blur(5px);
+.no-padding{
+    margin: 0;
+    padding: 0;
 }
-#page3-continer{
+.container3{
+    padding: 5% 35% 0 35%;
+    display: flex;
+}
+.container3 span{
+    position: absolute;
+    top: 0%;
+    left: 40%;
+    background: #fff;
+    font-size: 50px;
+    font-weight: 600;
+    padding: 3% 20px 0 20px;
+}
+.backbutton{
+    margin: 70px 0 0 45%;
+    font-size: 40px;
+    display: flex;
+}
+.backbutton span{
+    padding: 0 0 0 10px;
+}
+.cardp{
+    border: 1px solid red;
+    display: inline-block;
+    border-radius: 5px;
+    width: 20%;
+    height: 340px;
+    margin: 4% 0 0 36%;
+    padding: 10px 0 0 100px;
+    line-height: 2;
+    font-size: 25px;
+    color: red;
+    box-shadow:5px 5px 5px darkgrey;
+}
+.blur1{
+    filter: blur(8px);
+}
+.additem1{
     position:absolute;
-    top:14rem;
-    left:37%;
-    border:0.1rem solid #EF5350;
-    border-radius:0.4rem;
-    box-shadow:0.5rem 0.5rem  0.5em lightgrey;
-    width:23rem;
-    height:12rem;
-    background-color:white;
+    top: 35%;
+    left: 35%;
+    z-index: 5;
+    border: 1px solid red;
+    border-radius: 5px;
+    width: 30%;
+    height: 200px;
+    text-align: center;
+    color: red;
+    box-shadow: 5px 5px 5px darkgray;
+    background: white;
+    padding: 30px 20px 20px 20px;
+    font-size: 25px;
 }
-div #page3-continer h3{
-    font-weight:100;
-    font-size:2rem;
-    color:#EF5350;
-    margin-bottom:1rem;
+#additem{
+    box-shadow: 5px 5px 5px darkgray;
+    border-radius: 5px;
+    border: 1px solid red;
+    width: 60%;
+    height: 50px;
+    font-size: 30px;
 }
-#input-text-box{
-    border:0.07rem solid #EF5350;
-    border-radius:0.4rem;
-    box-shadow:0.3rem 0.3rem  0.4rem  lightgrey;
-    width:70%;
-    height:2rem;
-    
+#addbutton1{
+    border:1px solid red;
+    border-radius: 10px;
+    background: red;
+    color: white;
+    display: inline-block;
+    width: 100px;
 }
-#page3-button{
-    margin-top:1rem;
-    background-color:#E53935;
-    border:0.05rem solid #EF5350;
-    border-radius:1rem;
-    color:white;
-    width:25%;
-    height:2rem;
-    font-weight:100;
-    font-size:1rem;
+#additem2{
+    box-shadow: 5px 5px 5px darkgray;
+    border-radius: 5px;
+    border: 1px solid red;
+    width: 60%;
+    height: 50px;
+    font-size: 30px;
 }
-
-/* page-linker */
-#page-linker{
-    margin-top:3rem;
-    font-size:2rem;
-    text-align:center;
+#addbutton2{
+    border:1px solid red;
+    border-radius: 10px;
+    background: red;
+    color: white;
+    display: inline-block;
+    width: 100px;
 }
-.linker-button{
-    margin-left:2rem;
-    color:#757575;
+.addbuttonparis{
+    position: relative;
+    left: 50%;
+    top: 30%;
 }
-
-/* responsive */
-@media screen and (max-width:600px){
-    #main-continer{
-        margin-top:2.5em;
-        margin-left:5%;
-        margin-right:5%;
-        width:90%;
-        height:35rem;
-    }
-    /* 1 PAGE STYLE */
-    #header{
-        text-align:center;
-        margin-top:2rem;
-        margin-bottom:2rem;
-    }
-    #header p{
-        display:inline-block;
-        font-weight:700;
-        font-size:2rem;
-        margin:0;
-        text-align:center;
-        margin-right:1rem;
-    }
-    #header small{
-        font-weight:100;
-    }
-    #plus-icon{
-        display:inline-block;
-        color:#f44336;
-        font-size:2rem;
-        margin-left:4rem;
-    }
-    .page1-boxes{
-        border:0.07rem solid #EF5350;
-        border-radius:0.32rem;
-        width:15rem;
-        height:3.5rem;
-        text-align:left;
-        box-shadow:0.32rem 0.32rem  0.4em lightgrey;
-        margin-left:0.5em;
-        margin-bottom:1em;
-        font-weight:100;
-        font-size:1em;
-        color:#424242;
-    }
-    div .page1-boxes p{
-        margin-left:0.8em;
-        margin-top:1em;
-    }
-
-    /* PAGE LINKER */
-    #page-linker{
-        margin-top:2rem;
-        font-size:1rem;
-        text-align:center;
-        margin-right:2rem;
-    }
-
-    /* 2 PAGE STYLE */
-    #page2-header {
-        margin-top:2rem;
-        font-weight:700;
-        font-size:2rem;
-        color:#424242;
-    }
-    #page2-backicon{
-        color:#f44336;
-        margin-right:1rem;
-    }
-    .page2-box{
-        border:0.07rem solid #EF5350;
-        border-radius:0.32rem;
-        box-shadow:0.32rem 0.32rem  0.4em lightgrey;
-        width:15rem;
-        height:21rem;
-        margin:auto;
-        margin-top:2rem ;
-        position: relative;
-    }
-    div .page2-box h3{
-        color:#f44336;
-        font-size:1.5rem;
-        font-weight:200;
-    }
-    div.page2-box hr{
-        width:75%;
-        float:right;
-    }
-    div .page2-box h4{
-        color:#f44336;
-        text-decoration:line-through;
-        font-size:1.1rem;
-        margin-left:1rem;
-    }
-    div .page2-box input{
-        width:1rem;
-        height:1rem;
-        float:left;
-        margin-left:2rem;
-        margin-right:0;
-        display:inline;
-
-    }
-    div .page2-box p{
-        color:#424242;
-        display:inline;
-        font-size:1.2rem;
-        margin-left:0;
-        margin-right:3.5rem;
-     }
-     #page2-plusicon{
-        color:#f44336;
-        font-size:2rem;
+.goback2{
+    position: absolute;
+    left: 49%;
+}
+@media screen and (max-width: 1000px){
+    #taskli{
         position: absolute;
-        left:12.2rem;
-        top:18rem;
+        top: 5%;
+        left: 5%;
     }
-
-    /* 3 page style */
-    #page3-continer{
-        position:absolute;
-        top:12rem;
-        left:8%;
-        border:0.1rem solid #EF5350;
-        border-radius:0.8rem;
-        box-shadow:0.5rem 0.5rem  0.5em lightgrey;
-        width:16rem;
-        height:10rem;
-        background-color:white;
+    #addbutton{
+        position: absolute;
+        top: 5%;
+        right: 5%;
     }
-    div #page3-continer h3{
-        font-weight:100;
-        font-size:1.2rem;
-        color:#EF5350;
-        margin-bottom:1rem;
-        margin-top:2rem;
+    .text{
+        display: none;
     }
-    #input-text-box{
-        border:0.07rem solid #EF5350;
-        border-radius:0.4rem;
-        box-shadow:0.3rem 0.3rem  0.4rem  lightgrey;
-        width:60%;
-        height:1.5rem;
-        
+    .container2{
+        display: block;
+        margin-left: 25%;
+        padding-left: 0;
     }
-    #page3-button{
-        margin-top:1rem;
-        background-color:#E53935;
-        border:0.05rem solid #EF5350;
-        border-radius:1rem;
-        color:white;
-        width:25%;
-        height:2rem;
-        font-weight:100;
-        font-size:0.8rem;
+    .card{
+        margin-top: 10%;
+        height: 50px;
+        overflow: hidden;
     }
-
+    .container3{
+        position: absolute;
+        top: 1%;
+        left: 0%;
+        width: 100%;
+        overflow: visible;
+    }
+    .line{
+        display: none;
+    }
+    .back{
+        display: none;
+    }
+    .paris{
+        position: absolute;
+        top: 100%;
+        left: 15%;
+        font-size: 30px;
+    }
+    .backbutton{
+        position: absolute;
+        left: -40%;
+        top: -5%;
+    }
+    .cardp{
+        position: absolute;
+        top: 20%;
+        left: -10%;
+        overflow: hidden;
+        width: 200px;
+        height: 400px;
+        padding-left: 10%;
+    }
+    .addbuttonparis{
+        position: absolute;
+        top: 80%;
+        left: 70%;
+    }
+    .additem1{
+        position: absolute;
+        left: 5%;
+        width: 80%;
+        height: 150px;
+        line-height: 0.9;
+    }
+    .goback2{
+        position: absolute;
+        top: 5%;
+        left: 5%;
+    }
 }

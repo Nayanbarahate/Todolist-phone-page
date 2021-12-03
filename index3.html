@@ -10,17 +10,33 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/js/all.min.js" integrity="sha512-cyAbuGborsD25bhT/uz++wPqrh5cqPh1ULJz4NSpN9ktWcA6Hnh9g+CWKeNx2R0fgQt+ybRXdabSBgYXkQTTmA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
-    <div id="main-continer" class="refernce">
-        <div class="blure">
-            <div id="page2-header"><i class="fas fa-arrow-alt-circle-left" id="page2-backicon"></i>Trip to Paris</div>
-            <div class="page2-box"><h3>Trip to Paris</h3><hr><h4>Completed Task</h4><input type="checkbox" value="completed" name="pending-value"><p>Pending Task</p><i class="fas fa-plus-circle" id="page2-plusicon"></i></div> 
+    <div class="blur1">
+        <div class="container3">
+            <hr class="line">
+            <span>Trip to Paris</span>
         </div>
-        <div id="page3-continer">
-            <h3>Add New List</h3>
-            <input id="input-text-box" type="text" name="New-List"><br>
-            <a href="./index.html"><input id="page3-button" type="submit" value="ADD"></a>
+        <div class="backbutton">
+            <a href="./index.html">
+            <i style="color: rgb(255, 0, 0); text-decoration: none;" class="fas fa-arrow-circle-left"></i></a><span>Back</span>
         </div>
-        
-    </div>
+        <div class="cardp">
+            <font size="6">Trip to Paris</font>
+            <hr>
+            <strike>Completed Task</strike><br>
+            <input style="position: relative; left: -20px;" type="checkbox" id="taskp">
+            <label style="color: black; position: relative; left: -20px;" for="taskp">Pending Task</label>
+            <a style="text-decoration: none; position: relative; top: 45%; left: 30%; color: red; font-size: 40px;" href="index3.html">
+                <i class="fas fa-plus-circle"></i>
+            </a>
+        </div>
+        </div>    
+        <div class="additem1">
+                Add New Item <br><br>
+                <input id="additem" type="text"><br><br>
+                <label id="addbutton1" for="additem">Add</label>
+            </div>
+            <div class="goback2">
+                <a href="index1.html">go back</a>
+            </div>
 </body>
 </html>

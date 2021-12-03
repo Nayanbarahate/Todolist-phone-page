@@ -10,23 +10,53 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/js/all.min.js" integrity="sha512-cyAbuGborsD25bhT/uz++wPqrh5cqPh1ULJz4NSpN9ktWcA6Hnh9g+CWKeNx2R0fgQt+ybRXdabSBgYXkQTTmA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
-    <div id="main-continer" class="refernce">
-        <div id="page1-continer" class="blure">
-            <div id="header"><p>Tasks Lists</p><i class="fas fa-plus-circle" id="plus-icon"></i></div>
-            <div id="page1-body">
-                <div class="page1-boxes"><p>Trip to Paris</p></div>
-                <div class="page1-boxes"><p>My Todo List 2</p></div>
-                <div class="page1-boxes"><p>My Todo List 3</p></div>
-                <div class="page1-boxes"><p>My Todo List 4</p></div>
-                <div class="page1-boxes"><p>My Todo List 5</p></div>
+    <div class="blur1">
+        <div class="container1">
+            <div id="taskli">
+                <b>Task</b> Lists
+            </div>
+            <div id="addbutton">
+                <a style="text-decoration: none;" href="./index4.html">
+                <i style="color: red;" class="fa fa-plus-circle"></i></a>
+                Add List
             </div>
         </div>
-        <div id="page3-continer">
-            <h3>Add New List</h3>
-            <input id="input-text-box" type="text" name="New-List"><br>
-            <a href="./index3.html"><input id="page3-button" type="submit" value="ADD"></a>
+        <!-- second container for cards -->
+        <div class="container2">
+            <div class="card card1">
+                <a style="text-decoration: none;" href="./index2.html">
+                <font size="5" style="color: red;">Trip to Paris</font></a> <br> <br>
+                <hr><br>
+                <strike style="color: red;">Completed Task</strike><br><br>
+                <!-- postion relative and negative value for checkbox is not on same margin as the striked out text -->
+                <input style="position: relative; left: -10px;" type="checkbox" name="" id="task1">
+                <label style="position: relative; left: -10px;" for="task1">Pending Task</label>
+            </div>
+            <div class="card card2">
+                <font size="5" style="color: red;">My Todo List</font> <br> <br>
+                <hr><br>
+                <strike style="color: red;">Completed Task</strike><br><br>
+                <input style="position: relative; left: -10px;" type="checkbox" name="" id="task2">
+                <label style="position: relative; left: -10px;" for="task2">Pending Task</label>
+            </div>
+            <div class="card card3">
+                <font size="5" style="color: red;">My Todo List</font> <br> <br>
+                <hr><br>
+                <strike style="color: red;">Completed Task</strike><br><br>
+                <input style="position: relative; left: -10px;" type="checkbox" name="" id="task3">
+                <label style="position: relative; left: -10px;" for="task3">Pending Task</label>
+            </div>
         </div>
-       
-    </div>
+        </div>    
+        <div class="additem1">
+                Add New List <br><br>
+                <input id="additem2" type="text"><br><br>
+                <a href="index.html"></a>
+                <label id="addbutton2" for="additem2">Add</label>
+            </a>
+            </div>
+            <div class="goback2">
+                <a href="index.html">go back</a>
+            </div>
 </body>
 </html>
